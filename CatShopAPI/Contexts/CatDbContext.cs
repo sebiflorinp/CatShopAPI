@@ -5,7 +5,7 @@ namespace CatShopAPI.Contexts;
 
 public class CatDbContext : DbContext
 {
-    public DbSet<Cat> Cats { get; set; }
+    public DbSet<Cat?> Cats { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
